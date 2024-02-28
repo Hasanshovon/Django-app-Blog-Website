@@ -1,0 +1,97 @@
+{% load static %}
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Tanvir Hasan Shovon</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="{% static '/css/main.css' %}"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    
+  </head>
+  <body> 
+    <br>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3">
+          <div class="card card-body h-100 border-info" id="profile-wrapper">
+            
+            <img id="profile-pic" src="{% static 'images/img1.jpeg'%}" />
+            <br>
+            <h4>Tanvir Hasan Shovon</h4>
+            <hr>
+            <p>Hay welcome to my site. I am doing my M.Sc in  Machine Learning and Computer Vision. Currently, I live in Finland</p>
+          </div>
+        </div>
+        <div class="col-md-9">
+          <div class="card card-body border-info">
+            <br>
+            <h2>About Me</h2>
+            <hr>
+            <p>As a signal processing and machine learning M.Sc. student, I am dedicated to exploring the convergence of Data Science, AI, and advanced analytical techniques. With a B.Sc. in Electronics and Communication Engineering, my academic journey at Tampere University has been enriched with courses in audio processing, image processing, pattern recognition, machine learning, and computer vision.
+            </p>
+            <br>
+            <p>My professional experience as a Research Assistant at Khulna University of Engineering & Technology allowed me to deepen my expertise in machine learning and image processing. I possess strong programming skills in Python, C++, and JavaScript, which are fundamental to my ability to design and implement sophisticated data-driven solutions. I am equipped with a robust knowledge of Python, TensorFlow, Scikit-Learn, and a variety of machine learning techniques, and well-prepared to address complex challenges in AI, data science, and machine learning. I am passionate about continuous learning and applying my skills to innovative projects, aiming to contribute significantly to the fields of data analysis and AI.</p>
+          </div>
+        </div>
+      </div>
+      <br>
+      <div class="row">
+        <div class="col-md-12">
+          <h3>projects</h3>
+          <ul class="list-group">
+            <li class="list-group-item">
+              <div class="card card-body">
+          
+                <h5>Tampere City Bus and Tram Audio Source Classification with Librosa and Machine Learning</h5>
+                <p>In this project, we developed a machine learning model to classify audio recordings of Tampere City buses and trams. Using the Librosa library, we extracted key audio features like MFCCs, Mel spectrograms, and Chroma. To combat the high dimensionality of audio data, we implemented Principal Component Analysis (PCA) for feature reduction. The model combined LSTM networks and supervised classifiers to accurately distinguish between bus and tram sounds. This work demonstrates the potential of advanced audio processing and machine learning in urban sound analysis.</p>
+              </div>
+            </li>
+            <li class="list-group-item">
+              <div class="card card-body">
+                
+               
+                <h5>
+                  Satellite Image Classification Using TensorFlow</h5>
+                <p>In this project, we utilized the RSI-CB256 dataset, comprising 4 mixed classes from sensors and Google Maps snapshots, to advance remote sensing (RS) image interpretation for AI and computer vision applications. We employed a Convolutional Neural Network (CNN) with a 64x64x3 input layer, integrating Conv2D layers, Batch Normalization, MaxPool2D, Dropout, Flatten, Dense layers, and Softmax activation. Our CNN model achieved a notable test accuracy of 94.23%. For data preparation, TensorFlow's Image Data Generator was used for data augmentation, incorporating techniques such as rescaling, rotation, zooming, and horizontal flipping, enhancing the model's robustness and generalization capabilities.</p>
+              </div>
+            </li>
+            <li class="list-group-item">
+              <div class="card card-body">
+                
+              
+                <h5>
+                  Credit Card Fraud Detection Using GAN and Traditional Algorithms</h5>
+                <p>This project entailed analyzing a dataset of 284,807 European cardholder transactions from September 2013, including 0.172% fraudulent cases, to detect fraud. Features were mostly PCA-transformed, except for 'Time' and 'Amount'. The focus was on the 'Class' feature for fraud identification. Given the class imbalance, the Area Under the Precision-Recall Curve (AUPRC) was the key metric. We applied Isolation Forest, Local Outlier Factor (LOF), and One Class SVM, with Isolation Forest achieving the best results at 27% precision. Additionally, a GAN was used for synthetic data generation, reaching a high discriminator accuracy of 99.22% but a low F1 score in fraud detection. This project highlights the challenges and complexities of fraud detection in imbalanced datasets.</p>
+              </div>
+            </li>
+            
+          </ul>
+          
+        </div>
+      </div>
+      <br>
+      <div class="row">
+        <div class="col-md-12">
+          <div class="card card-body">
+            
+          </div>
+        </div>
+      </div>
+    </div>
+    
+  </body>
+</html>
